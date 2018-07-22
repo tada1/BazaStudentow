@@ -2,8 +2,9 @@
 #include<string>
 #include<iostream>
 
-class Employee{
+struct employee{
     public:
     std::string name, surname;
     float salary;
 };
+
