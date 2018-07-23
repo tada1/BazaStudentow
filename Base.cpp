@@ -1,6 +1,7 @@
 #include "Base.hpp"
 #include <iostream>
 #include <algorithm>
+#include <vector>
 
 
 void Base::AddNewStudent(Student student){
@@ -26,4 +27,12 @@ void Base::DisplayBase(){
     {
          std::cout << "Name: " << e.name << " Surname: " << e.surname << " Salary: " << e.salary << std::endl;
     }
+}
+
+void Base::DeleteRecordByIndex(int delete_index){
+
+   for(unsigned i = 0; i < StudentBase.size(); ++i)
+    {         if(StudentBase.at(i).index_nr == delete_index) StudentBase.erase(StudentBase.begin() + i);
+        else{}
+    }   
 }

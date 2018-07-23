@@ -12,7 +12,7 @@ class Base{
     public:
     void ExportToFile();
     void ImportFromFile();
-    void DeleteRecord();
+    void DeleteRecordByIndex(int);
     void AddNewStudent(Student);
     void DisplayBase();
     void AddNewEmployee(Employee);

@@ -21,6 +21,7 @@ int main(){
     
     base.AddNewEmployee(e1);
 
+    base.DeleteRecordByIndex(222);
     base.SortByIndex();
     base.DisplayBase();
    
